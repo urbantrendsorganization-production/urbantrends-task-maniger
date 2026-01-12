@@ -1,0 +1,70 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ======================
+# Virtual environments
+# ======================
+venv/
+.venv/
+env/
+ENV/
+
+# ======================
+# Environment variables
+# ======================
+.env
+.env.*
+*.env
+
+# ======================
+# Django stuff
+# ======================
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+static/
+
+# ======================
+# Logs
+# ======================
+*.log
+
+# ======================
+# Migrations (optional)
+# ======================
+# Uncomment ONLY if you know what you're doing
+# **/migrations/*.py
+# !**/migrations/__init__.py
+
+# ======================
+# Testing / coverage
+# ======================
+.coverage
+htmlcov/
+.pytest_cache/
+
+# ======================
+# IDEs & Editors
+# ======================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ======================
+# OS junk
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Build / cache
+# ======================
+dist/
+build/
+*.egg-info/
