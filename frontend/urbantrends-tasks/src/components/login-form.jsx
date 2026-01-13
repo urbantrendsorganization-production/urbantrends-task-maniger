@@ -20,6 +20,7 @@ import { useForm } from "react-hook-form"
 import { useAuth } from "@/context/auth-context"
 import api from "@/lib/axios"
 import { toast } from "sonner"
+import Loading from "./Loading"
 
 export function LoginForm({
   className,
@@ -59,7 +60,7 @@ export function LoginForm({
     login(response.data.user)
 
     toast.success("Login successful!")
-    navigate("/")
+    navigate('/load')
   } catch (error) {
     console.error(error)
     toast.error(
@@ -129,7 +130,7 @@ export function LoginForm({
 
                 <FieldDescription className="text-center">
                   Don&apos;t have an account?{" "}
-                  <a href="/signup" className="font-medium underline underline-offset-4">
+                  <a href="/sign-in" className="font-medium underline underline-offset-4">
                     Sign up
                   </a>
                 </FieldDescription>
