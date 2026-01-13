@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Header from './components/Header'
 import Login from './pages/Login'
 import Sign from './pages/Sign'
+import { Toaster } from 'sonner'
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path='/login' element={<Login />}/>
         <Route path='/sign-in' element={<Sign />} />
       </Routes>
+
+      <Toaster position='top-right'/>
     </>
   )
 }
